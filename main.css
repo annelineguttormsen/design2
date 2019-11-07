@@ -11,6 +11,7 @@ p, li {
 
 h1, h2 {
   font-family: "Arvo", Times New Roman, serif;
+  font-weight: 400;
 }
 
 .page {
@@ -93,13 +94,6 @@ h1, h2 {
   height: 18px;
   vertical-align: top;
 }
-.header__menu__icon {
-  width: 40px;
-  position: absolute;
-  top: 55px;
-  right: 20px;
-  display: none;
-}
 
 .hero {
   padding: 0px 20px;
@@ -127,6 +121,9 @@ h1, h2 {
   font-size: 24px;
   display: inline-block;
   vertical-align: top;
+}
+.hero__cta--mobile {
+  display: none;
 }
 .hero__arrow {
   display: inline-block;
@@ -344,11 +341,11 @@ h1, h2 {
   }
 }
 @media only screen and (max-width: 576px) {
-  .header__nav {
+  .hero__cta--desktop {
     display: none;
   }
-  .header__menu__icon {
-    display: inline-block;
+  .hero__cta--mobile {
+    display: block;
   }
 
   .col-xs-12 {
