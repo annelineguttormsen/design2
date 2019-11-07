@@ -4,21 +4,39 @@
     <title>Oro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/gif" href="#">
+    <link rel="icon" type="image/png" href="orologo.png">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Karla&display=swap" rel="stylesheet">
   </head>
   <body class="page">
+    <div class="col-6 mobile__menu">
+      <ul class="mobile__menu__list">
+        <li>OM OSS</li>
+        <li>VÅRE PRODUKTER</li>
+      </ul>
+    </div>
       <div class="page__wrap">
         <div class="col-12 header">
-          <img class="header__logo" src="orologo.svg"><ul class="header__nav">
+          <img class="header__logo" src="orologo.svg"><div class="header--absolute"><ul class="header__nav">
             <li><div class="background--pink"></div>OM OSS</li><li><div class="background--pink"></div>VÅRE PRODUKTER</li>
-          </ul><img class="header__menu__icon" src="menu-icon.svg">
+          </ul><button class="header__button"><p>FINN BUTIKK</p><img src="anchor-icon.svg"></button></div><img class="header__menu__icon" src="menu-icon.svg">
         </div>
-        <div class="hero">
-          <div class="col-6 hero__productimg"></div><div class="col-6 hero__cta">
-            <h1>Pee pee poo poo</h1>
+        <div class="col-12 hero">
+          <div class="col-6 hero__productimg">
+            <img src="orobringebær.png">
+          </div><div class="col-6 hero__cta">
+            <h1><div class="background--pink"></div>En ny måte å nyte lakris</h1>
+            <p class="hero__cta--p">Finn ut mer</p><img class="hero__arrow" src="arrow-icon.svg">
           </div>
+          <div class="col-6 hero__content">
+            <h2><div class="background--pink"></div>Sed ut perspiciatis</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+          </div><div class="col-6 hero__productimg hero__productimg--clockw">
+            <img src="orolakris.png">
+          </div>
+        </div>
+        <div class="col-12 footer">
+          <img class="footer__logo" src="orologo--hvit.svg">
         </div>
       </div><!--end page wrap-->
   </body>
