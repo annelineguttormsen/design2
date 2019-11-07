@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
 }
-p, li {
+p, a, li {
     font-size:18px;
     font-family:$sans-serif-font;
     line-height:2;
@@ -17,23 +17,6 @@ h1, h2 {
     background:$lysehvit;
     &__wrap {
         margin:0 auto;
-    }
-}
-.mobile__menu {
-    display:none;
-    height:100%;
-    background:$lysehvit;
-    position:fixed;
-    right:0;
-    z-index:1;
-    &__list {
-        list-style-type:none;
-        position:absolute;
-        left:20px;
-        top:20%;
-        li {
-            margin:20px 0px;
-        }
     }
 }
 .header {
@@ -53,6 +36,7 @@ h1, h2 {
     }
     &__nav {
         list-style-type:none;
+        margin-right:30px;
         li {
             cursor:pointer;
             display:inline-block;
@@ -68,10 +52,18 @@ h1, h2 {
                 bottom:7px;
                 right:-5px;
                 background:$rosa;
+                transition:width .2s ease-in-out;
             }
+        }
+        li:hover > .background--pink {
+            width:75%;
+        }
+        li:active > .background--pink {
+            width:100%;
         }
     }
     &__button {
+        transition:opacity .1s linear;
         border:none;
         padding:10px 20px;
         background:$rosa;
@@ -88,6 +80,12 @@ h1, h2 {
             display:inline-block;
             height:18px;
             vertical-align:top;
+        }
+        &:hover {
+            opacity:0.8;
+        }
+        &:active {
+            background:rgb(168, 65, 84);
         }
     }
 }
@@ -113,10 +111,15 @@ h1, h2 {
             font-weight:normal;
             position:relative;
         }
-        &--p {
-            font-size:24px;
+        &--a {
+            font-size:32px;
             display:inline-block;
             vertical-align:top;
+            text-decoration:none;
+            color:black;
+            &:hover {
+                opacity:0.6;
+            }
         }
         &--mobile {
             display:none;
@@ -124,9 +127,9 @@ h1, h2 {
     }
     &__arrow {
         display:inline-block;
-        vertical-align:top;
-        margin-left:20px;
-        height:40px;
+        vertical-align:middle;
+        margin-left:15px;
+        height:32px;
     }
     &__content {
         padding-top:100px;
