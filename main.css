@@ -104,11 +104,14 @@ h1, h2 {
 }
 .hero__productimg .img--mobile {
   display: none;
+  position: relative;
+  left: -20%;
   width: 100%;
 }
 .hero__cta {
   font-family: "Arvo", Times New Roman, serif;
   font-size: 50px;
+  position: relative;
 }
 .hero__cta h1 {
   font-weight: normal;
@@ -154,13 +157,17 @@ h1, h2 {
 .footer {
   background: #E55A73;
   position: relative;
-  padding: 20px 10px;
-  height: 90px;
+  padding: 20px;
+}
+.footer__nav {
+  list-style-type: none;
+  color: white;
 }
 .footer__logo {
   height: 50px;
   position: absolute;
   right: 20px;
+  top: 20px;
 }
 
 [class^=col] {
@@ -279,6 +286,9 @@ h1, h2 {
     width: 100%;
   }
 
+  .header {
+    padding: 20px 10px 50px 10px;
+  }
   .header--absolute {
     position: static;
     display: inline-block;
@@ -291,15 +301,27 @@ h1, h2 {
     color: #E55A73;
     transition: color 0.1s ease-in-out;
   }
-  .header .background--pink {
+  .header__button {
     display: none;
   }
-  .header__button {
+  .header .background--pink {
     display: none;
   }
 
   .hero__cta h1 {
     font-size: 50px;
+  }
+  .hero__cta h2 {
+    font-size: 30px;
+  }
+  .hero__cta--desktop {
+    display: none;
+  }
+  .hero__cta--mobile {
+    display: block;
+  }
+  .hero__content {
+    padding: 20px 0px;
   }
 
   .col-sm-12 {
@@ -343,11 +365,11 @@ h1, h2 {
   }
 }
 @media only screen and (max-width: 576px) {
-  .hero__cta--desktop {
-    display: none;
+  .header__nav {
+    margin-right: 0;
   }
-  .hero__cta--mobile {
-    display: block;
+  .header__nav li {
+    margin-right: 0;
   }
 
   .col-xs-12 {
